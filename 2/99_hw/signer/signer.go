@@ -36,7 +36,6 @@ func ExecutePipeline(pipeline ...job) {
 	}
 
 	wg.Wait()
-	close(md5Semaphore)
 }
 
 func CombineResults(in, out chan interface{}) {
